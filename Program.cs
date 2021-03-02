@@ -27,7 +27,10 @@ namespace lovecraft
                 }
                 else
                 {
-                    wordCount.Add(key, 1);
+                    if (!String.IsNullOrWhiteSpace(word))
+                    {
+                        wordCount.Add(key, 1);
+                    }
                 }
             }
 
